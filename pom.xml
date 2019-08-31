@@ -19,6 +19,7 @@
 
     <properties>
         <jedis.version>3.1.0</jedis.version>
+        <transition-redis.version>1.0-SNAPSHOT</transition-redis.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -26,6 +27,11 @@
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>
                 <version>${jedis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.transition.redis</groupId>
+                <artifactId>transition-redis</artifactId>
+                <version>${transition-redis.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
