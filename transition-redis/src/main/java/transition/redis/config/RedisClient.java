@@ -27,7 +27,4 @@ public class RedisClient {
         return new Jedis(host, port);
     }
 
-    public String get(String key) {
-        return client.get(key);
-    }
 }
